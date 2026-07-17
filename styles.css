@@ -1,0 +1,178 @@
+/* ================= VARIABLES Y RESET ================= */
+:root {
+  --primary: #0d3b66;
+  --secondary: #f4d35e;
+  --bg: #f4f7f6;
+  --white: #ffffff;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: sans-serif;
+  background: var(--bg);
+  color: #1d2d44;
+  line-height: 1.5;
+}
+
+/* ================= NAV Y CABECERA ================= */
+.main-header {
+  background: var(--white);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-brand {
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--primary);
+}
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.nav-menu a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+}
+.btn-nav-action {
+  background: var(--secondary);
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+/* ================= DISEÑO RESPONSIVO SIN MEDIA QUERIES (El Truco) ================= */
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+/* Este grid mágico se adapta solo a móvil y PC sin usar @media */
+.hero-container,
+.grid-two-columns,
+.contact-card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  align-items: center;
+}
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* ================= COMPONENTES Y TARJETAS ================= */
+.btn-primary,
+.btn-submit,
+.btn-download-sim {
+  background: var(--primary);
+  color: var(--white);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+}
+.btn-secondary {
+  background: transparent;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  padding: 8px 18px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.btn-submit {
+  background: #06d6a0;
+  width: 100%;
+}
+
+.service-card,
+.action-card-mini {
+  background: var(--white);
+  padding: 25px;
+  border-radius: 8px;
+  border: 1px solid #eee;
+}
+.service-card.featured {
+  border: 2px solid var(--secondary);
+  background: #fefcf3;
+}
+
+/* ================= CONTACTO Y FORMULARIO ================= */
+.contact-card-wrapper {
+  background: var(--white);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.contact-info-panel {
+  background: var(--primary);
+  color: var(--white);
+  padding: 30px;
+}
+.contact-form-panel {
+  padding: 30px;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* ================= PIE DE PÁGINA ================= */
+.main-footer {
+  background: var(--primary);
+  color: var(--white);
+  padding: 40px 20px 20px;
+}
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.footer-links ul {
+  list-style: none;
+}
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+}
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.9rem;
+}

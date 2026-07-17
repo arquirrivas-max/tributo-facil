@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tributo Fácil - Centraliza tus Obligaciones Tributarias</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- CABECERA -->
+    <header class="main-header">
+      <div class="header-container">
+        <a href="#" class="logo-brand" aria-label="Inicio de Tributo Fácil">
+          <span class="logo-icon"></span> Tributo<span>Fácil</span>
+        </a>
+        <nav class="navigation" aria-label="Navegación principal">
+          <ul class="nav-menu">
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#orientacion">Orientación</a></li>
+            <li><a href="#reportes">Corporativo</a></li>
+            <li><a href="#contacto" class="btn-nav-action">Soporte</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO SECTION (HU01 - PERSONAS NATURALES) -->
+      <section class="hero-section" id="inicio">
+        <div class="hero-container">
+          <div class="hero-text-content">
+            <span class="tagline">Impuestos al día, sin complicaciones</span>
+            <h1>Tus tributos bajo control en un solo lugar</h1>
+            <p>
+              Consulta tus deudas pendientes, visualiza recibos y mantén al día
+              tus obligaciones con un sistema visual diseñado para personas
+              naturales y profesionales.
+            </p>
+            <div class="hero-actions">
+              <a href="#contacto" class="btn-primary"
+                >Consultar mi Estado Tributario</a
+              >
+              <a href="#servicios" class="btn-secondary">Saber más</a>
+            </div>
+          </div>
+          <div class="hero-visual" aria-hidden="true">
+            
+
+      <!-- SECCIÓN SERVICIOS (HU02 - EMPRENDEDORES) -->
+      <section class="services-section" id="servicios">
+        <div class="section-container">
+          <div class="section-header">
+            <h2>Facilidades a tu Medida</h2>
+            <p>
+              Hemos diseñado herramientas específicas para resolver la
+              complejidad contable de cada segmento.
+            </p>
+          </div>
+          <div class="services-grid">
+            <article class="service-card">
+              <div class="service-icon"></div>
+              <h3>Personas Naturales</h3>
+              <p>
+                Monitorea retenciones, genera recibos por honorarios
+                electrónicos y proyecta de forma fácil tus saldos de fin de año.
+              </p>
+            </article>
+            <article class="service-card featured">
+              <div class="service-icon"></div>
+              <h3>Emprendedores (HU02)</h3>
+              <p>
+                Aprende a emitir comprobantes electrónicos sin errores y recibe
+                alertas de vencimiento configuradas con el dígito de tu RUC.
+              </p>
+              <a href="#orientacion" class="card-link">Ver Cronograma →</a>
+            </article>
+            <article class="service-card">
+              <div class="service-icon"></div>
+              <h3>Empresas (HU03)</h3>
+              <p>
+                Centraliza la contabilidad mensual corporativa, automatiza la
+                validación de facturas y descarga reportes rápidos para
+                auditorías.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECCIÓN DE REPORTES (HU03 - CORPORATIVO) -->
+      <section class="reports-section" id="reportes">
+        <div class="section-container">
+          <div class="grid-two-columns reverse">
+            <div class="reports-text">
+              <h2>Consolida y Exporta en Segundos</h2>
+              <p>
+                Sabemos que las empresas y contadores necesitan veracidad y
+                rapidez. Nuestra plataforma permite realizar la descarga
+                consolidada de tus registros contables principales en un formato
+                limpio listo para presentación oficial.
+              </p>
+              <div class="action-card-mini">
+                <p>Historial consolidado mensual de facturación y compras.</p>
+                <button
+                  class="btn-download-sim"
+                  onclick="alert('Generando PDF en base a requisitos de HU03...')"
+                >
+                  Descargar Reporte PDF
+                </button>
+              </div>
+            </div>
+            
+
+      <!-- SECCIÓN DE CONTACTO (HU04 - CONTADORES Y SOPORTE) -->
+      <section class="contact-section" id="contacto">
+        <div class="section-container">
+          <div class="contact-card-wrapper">
+            <div class="contact-info-panel">
+              <h2>Soporte Especializado</h2>
+              <p>
+                ¿Tienes dudas técnicas o normativas de tus clientes? Nuestro
+                canal directo asiste a profesionales de la contabilidad para
+                destrabar inconvenientes complejos.
+              </p>
+              <div class="contact-details">
+                <p>Centro de Soporte Digital</p>
+                <p>contacto@tributofacil.pe</p>
+                <p>Toll-Free: 0800-TRIBUTO</p>
+              </div>
+            </div>
+            <div class="contact-form-panel">
+              <h3>Atención Profesional (HU04)</h3>
+              <form
+                id="form-soporte"
+                class="custom-form"
+                onsubmit="event.preventDefault(); alert('Solicitud registrada exitosamente. Ticket de soporte asignado de acuerdo al criterio HU04.');"
+              >
+                <div class="form-group">
+                  <label for="nombre">Nombre Completo</label>
+                  <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    required
+                    placeholder="Ej. Juan Pérez"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email">Correo Electrónico</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    placeholder="correo@ejemplo.com"
+                  />
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="matricula">Matrícula (CCPL / CPC)</label>
+                    <input
+                      type="text"
+                      id="matricula"
+                      name="matricula"
+                      placeholder="Opcional"
+                    />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="mensaje">Consulta Tributaria</label>
+                  <textarea
+                    id="mensaje"
+                    name="mensaje"
+                    rows="4"
+                    required
+                    placeholder="Describa a detalle la problemática contable a evaluar..."
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn-submit">
+                  Enviar Solicitud de Soporte
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="main-footer">
+      <div class="footer-container">
+        <div class="footer-brand-side">
+          <span class="footer-logo">Tributo<span>Fácil</span></span>
+          <p>
+            Cumplimiento rápido, ordenado y accesible para todos los niveles de
+            tributación.
+          </p>
+        </div>
+        <div class="footer-links">
+          <h4>Plataforma</h4>
+          <ul>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#orientacion">Orientación</a></li>
+            <li><a href="#reportes">Reportes</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Tributo Fácil. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+  </body>
+</html>
